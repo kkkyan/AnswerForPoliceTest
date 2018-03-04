@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 using namespace std;
-// 答案用1 2 3 4表示
+// 麓冒掳赂脫脙1 2 3 4卤铆脢戮
 int ans[11] = {1};
-//选项 
+//脩隆脧卯 
 int opts[11][5] = {
 	0,0,0,0,0,
 	0,1,2,3,4,
@@ -76,12 +76,16 @@ int test(){
 	switch(ans3){
 		case 1:
 			ans3IsRight =  ans3!=ans2 && ans3!=ans4 && ans3!=ans6;
+			break;
 		case 2:
 			ans3IsRight =  ans6!=ans2 && ans6!=ans3 && ans6!=ans4;
+			break;
 		case 3:
 			ans3IsRight =  ans2!=ans3 && ans2!=ans6 && ans2!=ans4;
+			break;
 		case 4:
 			ans3IsRight =  ans4!=ans2 && ans4!=ans3 && ans4!=ans6;
+			break;
 	}
 	if(!ans3IsRight){
 //		printf("question 3 can't queried\n");
